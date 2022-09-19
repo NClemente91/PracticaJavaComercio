@@ -19,26 +19,65 @@ public class ClienteService implements IBaseService<Cliente> {
 
     @Override
     public List<Cliente> findAll() {
-        return clienteRepository.findAll();
+        try{
+            return this.clienteRepository.findAll();
+        }catch(Exception e){
+           throw new Error(e.getMessage());
+        }
     }
 
     @Override
-    public Cliente findById(Long id) {
+    public Cliente findById(Integer id) {
+        // Verificación
+        try{
+            return this.clienteRepository.findById(id);
+        }catch(Exception e){
+            throw new Error(e.getMessage());
+        }
+
+    }
+
+    @Override
+    public Cliente insert(Cliente cliente) {
+        try{
+            this.clienteRepository.insert(cliente);
+        }catch(Exception e){
+            this.em.getTransaction().rollback();
+            throw new Error(e.getMessage());
+        }
+
+        //Ver retorno del tipo Cliente
         return null;
     }
 
     @Override
-    public Cliente insert(Cliente entity) {
+    public Cliente update(Integer id, Cliente cliente) {
+        try{
+            this.clienteRepository.update(cliente);
+        }catch(Exception e){
+            this.em.getTransaction().rollback();
+            throw new Error(e.getMessage());
+        }
+
+        //Ver retorno del tipo Cliente
         return null;
     }
 
     @Override
-    public Cliente update(Long id, Cliente entity) {
-        return null;
-    }
+    public boolean delete(Integer id) {
+        // Verificación
+        Cliente cliente = findById(id);
 
-    @Override
-    public boolean delete(Long id) {
+        try{
+            this.clienteRepository.delete(cliente);
+        }catch(Exception e){
+            em.getTransaction().rollback();
+            throw new Error(e.getMessage());
+        }
+
+        //Ver retorno del tipo Cliente
         return false;
     }
+
+
 }
