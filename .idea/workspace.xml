@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9fa697a-fcd5-4a69-8f9d-a1c70574e2f7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/IBaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/IBaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/DireccionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/DireccionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/FacturaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/FacturaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/PedidoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/PedidoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/ProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/ProductoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/IBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/IBaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/ClienteService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,15 +55,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/leonel/Documents/Java/ProyectoComercio",
-    "settings.editor.selected.configurable": "Errors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/leonel/Documents/Java/ProyectoComercio&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

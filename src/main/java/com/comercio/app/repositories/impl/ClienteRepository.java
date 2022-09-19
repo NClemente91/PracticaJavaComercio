@@ -7,7 +7,6 @@ import jakarta.persistence.EntityManager;
 import java.util.List;
 
 public class ClienteRepository implements IBaseRepository<Cliente> {
-
     private EntityManager em;
 
     public ClienteRepository(EntityManager em) {
