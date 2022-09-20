@@ -13,6 +13,12 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "facturas")
 public class Factura {
+
+    public Factura(Boolean pagado, LocalDate fechaEmision) {
+        this.pagado = pagado;
+        this.fechaEmision = fechaEmision;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_factura")

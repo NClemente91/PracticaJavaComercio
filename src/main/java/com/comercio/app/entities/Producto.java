@@ -11,6 +11,12 @@ import lombok.*;
 @Entity
 @Table(name = "productos")
 public class Producto {
+
+    public Producto(String nombre, Integer stock) {
+        this.nombre = nombre;
+        this.stock = stock;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")

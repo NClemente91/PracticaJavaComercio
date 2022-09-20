@@ -3,6 +3,7 @@ package com.comercio.app;
 import com.comercio.app.configurations.JpaUtilDB;
 import com.comercio.app.controllers.*;
 import com.comercio.app.entities.Cliente;
+import com.comercio.app.entities.Direccion;
 import jakarta.persistence.EntityManager;
 
 public class Main {
@@ -36,6 +37,28 @@ public class Main {
 
             //GetOneById//
             System.out.println(clienteController.getClienteById(1));
+
+
+            //----------DIRECCIONES----------//
+            Direccion direccion1 = new Direccion("Belgrano", 2300, "Córdoba");
+            Direccion direccion2 = new Direccion("San Martín", 1800, "Paraná");
+
+            //Insert//
+            direccionController.createDireccion(direccion1);
+            direccionController.createDireccion(direccion2);
+
+            //Update//
+            direccion2.setLocalidad("Santa Fe");
+            direccionController.updateDireccion(2, direccion2);
+
+            //delete//
+            System.out.println(direccionController.deleteDireccion(2));
+
+            //GetAll//
+            System.out.println(direccionController.getDirecciones());
+
+            //GetOneById//
+            System.out.println(direccionController.getDireccionById(2));
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
