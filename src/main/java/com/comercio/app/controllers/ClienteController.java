@@ -36,5 +36,4 @@ public class ClienteController {
         return  clienteService.delete(id);
     }
 
-
 }
