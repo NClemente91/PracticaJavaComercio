@@ -5,7 +5,6 @@ import lombok.*;
 
 @Getter
 @Setter
-@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -24,4 +23,15 @@ public class Pedido {
     @Column(name = "entregado")
     private Boolean entregado;
 
+    @ManyToOne
+    private Direccion direccion;
+
+    @Override
+    public String toString() {
+        return "Pedido{" +
+                "id=" + id +
+                ", entregado= " + entregado +
+                ", direccion= " +  direccion.getCalle() +
+                '}';
+    }
 }

@@ -3,6 +3,9 @@ package com.comercio.app.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -30,4 +33,8 @@ public class Direccion {
 
     @Column(name = "localidad", nullable = false, length = 30)
     private String localidad;
+
+    @OneToMany(mappedBy = "direccion")
+    private List<Pedido> listaPedidos = new ArrayList<>();
+
 }
