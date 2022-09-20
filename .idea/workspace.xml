@@ -8,13 +8,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Direccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Direccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/ClienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/DireccionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/DireccionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/FacturaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/FacturaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/DireccionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/DireccionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/FacturaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/FacturaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/PedidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/ProductoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/ProductoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
