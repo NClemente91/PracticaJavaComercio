@@ -1,7 +1,13 @@
 package com.comercio.app.entities;
 
 import jakarta.persistence.*;
+import lombok.*;
 
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "direcciones")
 public class Direccion {

@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9fa697a-fcd5-4a69-8f9d-a1c70574e2f7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/DireccionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/DireccionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/FacturaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/FacturaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/PedidoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/PedidoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/ProductoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/repositories/impl/ProductoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/IBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/IBaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/controllers/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Direccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Direccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/entities/Producto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/comercio/app/services/impl/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
