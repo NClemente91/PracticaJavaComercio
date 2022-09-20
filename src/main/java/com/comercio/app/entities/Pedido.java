@@ -11,6 +11,11 @@ import lombok.*;
 @Entity
 @Table(name = "pedidos")
 public class Pedido {
+
+    public Pedido(Boolean entregado) {
+        this.entregado = entregado;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")

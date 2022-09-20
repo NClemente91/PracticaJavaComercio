@@ -11,6 +11,12 @@ import lombok.*;
 @Entity
 @Table(name = "direcciones")
 public class Direccion {
+    public Direccion(String calle, Integer numero, String localidad) {
+        this.calle = calle;
+        this.numero = numero;
+        this.localidad = localidad;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
