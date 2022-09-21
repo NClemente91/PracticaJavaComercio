@@ -86,9 +86,12 @@ public class DireccionService implements IBaseService<Direccion> {
         try{
             if(verify(id)){
                 Direccion direccion = findById(id);
+                System.out.println(direccion);
                 this.em.getTransaction().begin();
                 this.direccionRepository.delete(direccion);
                 this.em.getTransaction().commit();
+                Direccion direccion1 = findById(id);
+                System.out.println(direccion1);
                 return true;
             }else{
                 return false;

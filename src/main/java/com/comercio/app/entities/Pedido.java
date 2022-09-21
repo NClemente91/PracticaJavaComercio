@@ -23,8 +23,12 @@ public class Pedido {
     @Column(name = "entregado")
     private Boolean entregado;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Direccion direccion;
+
+    @OneToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "factura_id")
+    private Factura factura;
 
     @Override
     public String toString() {
