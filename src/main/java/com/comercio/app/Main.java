@@ -2,10 +2,7 @@ package com.comercio.app;
 
 import com.comercio.app.configurations.JpaUtilDB;
 import com.comercio.app.controllers.*;
-import com.comercio.app.entities.Cliente;
-import com.comercio.app.entities.Direccion;
-import com.comercio.app.entities.Factura;
-import com.comercio.app.entities.Pedido;
+import com.comercio.app.entities.*;
 import jakarta.persistence.EntityManager;
 import jdk.swing.interop.SwingInterOpUtils;
 
@@ -67,7 +64,9 @@ public class Main {
 //            //GetOneById//
 //            System.out.println(direccionController.getDireccionById(2));
 
-            //----------PEDIDOS----------//
+            //--------------------//
+            Cliente cliente1 = new Cliente("Nico", "Clemente", "343413434", "email@example.com");
+
             Direccion direccion1 = new Direccion("Belgrano", 2300, "Córdoba");
 
             Pedido pedido1 = new Pedido(true);
@@ -76,14 +75,29 @@ public class Main {
             Factura factura1 = new Factura(true, LocalDate.now());
             Factura factura2 = new Factura(true, LocalDate.now());
 
+            Producto producto1 = new Producto("Cerveza", 100);
+            Producto producto2 = new Producto("Gaseosa", 200);
+            Producto producto3 = new Producto("Agua", 150);
+            Producto producto4 = new Producto("Vino", 250);
+
             pedido1.setFactura(factura1);
             pedido2.setFactura(factura2);
             pedido1.setDireccion(direccion1);
             pedido2.setDireccion(direccion1);
+            pedido1.getProductos().add(producto1);
+            pedido1.getProductos().add(producto2);
+            pedido2.getProductos().add(producto3);
+            pedido2.getProductos().add(producto4);
 
-            pedidoController.createPedido(pedido1);
-            pedidoController.createPedido(pedido2);
+            direccion1.getListaPedidos().add(pedido1);
+            direccion1.getListaPedidos().add(pedido2);
 
+            cliente1.getPedidos().add(pedido1);
+            cliente1.getPedidos().add(pedido2);
+
+            clienteController.createCliente(cliente1);
+
+            System.out.println(direccionController.getDireccionById(1).getListaPedidos());
 
 //            //---------------Sin persistir direccion---------------//
 //            pedido1.setDireccion(direccion1);

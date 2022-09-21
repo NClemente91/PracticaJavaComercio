@@ -3,6 +3,9 @@ package com.comercio.app.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -23,12 +26,22 @@ public class Pedido {
     @Column(name = "entregado")
     private Boolean entregado;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.ALL)
     private Direccion direccion;
 
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "factura_id")
     private Factura factura;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "tbl_pedidos_productos",
+            joinColumns = @JoinColumn(name = "pedido_id"),
+            inverseJoinColumns = @JoinColumn(name = "producto_id")
+    )
+    private List<Producto> productos = new ArrayList<>();
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Cliente cliente;
 
     @Override
     public String toString() {
