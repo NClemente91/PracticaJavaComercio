@@ -3,6 +3,9 @@ package com.comercio.app.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -35,4 +38,7 @@ public class Cliente {
 
     @Column(name = "email", nullable = false, length = 40)
     private String email;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Pedido> pedidos = new ArrayList<>();
 }

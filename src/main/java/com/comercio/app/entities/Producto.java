@@ -3,6 +3,9 @@ package com.comercio.app.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -27,5 +30,8 @@ public class Producto {
 
     @Column(name = "stock", nullable = false)
     private Integer stock;
+
+    @ManyToMany(mappedBy = "productos")
+    private List<Pedido> pedidos = new ArrayList<>();
 
 }
