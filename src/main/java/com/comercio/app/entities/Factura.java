@@ -30,4 +30,8 @@ public class Factura {
     @Column(name = "fecha_emision")
     private LocalDate fechaEmision;
 
+    @OneToOne(mappedBy = "factura")
+    @JoinColumn(name = "pedido_id")
+    private Pedido pedido;
+
 }

@@ -4,9 +4,13 @@ import com.comercio.app.configurations.JpaUtilDB;
 import com.comercio.app.controllers.*;
 import com.comercio.app.entities.Cliente;
 import com.comercio.app.entities.Direccion;
+import com.comercio.app.entities.Factura;
 import com.comercio.app.entities.Pedido;
 import jakarta.persistence.EntityManager;
+import jdk.swing.interop.SwingInterOpUtils;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -69,25 +73,47 @@ public class Main {
             Pedido pedido1 = new Pedido(true);
             Pedido pedido2 = new Pedido(false);
 
-            //Insert//
-            direccionController.createDireccion(direccion1);
+            Factura factura1 = new Factura(true, LocalDate.now());
+            Factura factura2 = new Factura(true, LocalDate.now());
 
-            direccion1.getListaPedidos().add(pedido1);
-            direccion1.getListaPedidos().add(pedido2);
-
+            pedido1.setFactura(factura1);
+            pedido2.setFactura(factura2);
             pedido1.setDireccion(direccion1);
             pedido2.setDireccion(direccion1);
 
             pedidoController.createPedido(pedido1);
             pedidoController.createPedido(pedido2);
 
-            System.out.println(pedidoController.getPedidos());
+
+//            //---------------Sin persistir direccion---------------//
+//            pedido1.setDireccion(direccion1);
+//            pedido2.setDireccion(direccion1);
+//
+//            pedidoController.createPedido(pedido1);
+//            pedidoController.createPedido(pedido2);
+//
+//            pedidoController.deletePedido(1);
+//            pedidoController.deletePedido(2);
+//
+//            System.out.println(direccionController.deleteDireccion(1));
+//
+//            //---------------Sin persistir pedidos---------------//
+//            direccionController.createDireccion(direccion1);
+//
+//            direccion1.getListaPedidos().add(pedido1);
+//            direccion1.getListaPedidos().add(pedido2);
+//
+//            direccionController.updateDireccion(1, direccion1);
+//
+//            System.out.println(pedidoController.getPedidos());
+//
+//            System.out.println(direccionController.getDireccionById(1).getListaPedidos());
 
             //Update//
-            direccion1.setCalle("San Martin");
-            direccionController.updateDireccion(1,direccion1);
-
-            System.out.println(pedidoController.getPedidos());
+//            direccion1.setCalle("San Martin");
+//            direccionController.updateDireccion(1,direccion1);
+//
+//            System.out.println(pedidoController.getPedidos());
 
 //            //delete//
 //            System.out.println(direccionController.deleteDireccion(2));
