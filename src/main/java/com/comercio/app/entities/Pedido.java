@@ -26,9 +26,6 @@ public class Pedido {
     @Column(name = "entregado")
     private Boolean entregado;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    private Direccion direccion;
-
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "factura_id")
     private Factura factura;
@@ -47,8 +44,10 @@ public class Pedido {
     public String toString() {
         return "Pedido{" +
                 "id=" + id +
-                ", entregado= " + entregado +
-                ", direccion= " +  direccion.getCalle() +
+                ", entregado=" + entregado +
+                ", factura=" + factura.getId() +
+                ", productos=" + productos +
+                ", cliente=" + cliente.getNombre() +
                 '}';
     }
 }
