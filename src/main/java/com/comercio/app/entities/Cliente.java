@@ -15,11 +15,12 @@ import java.util.List;
 @Table(name = "clientes")
 public class Cliente {
 
-    public Cliente(String nombre, String apellido, String telefono, String email) {
+    public Cliente(String nombre, String apellido, String telefono, String email, Direccion direccion) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.email = email;
+        this.direccion = direccion;
     }
 
     @Id
@@ -39,6 +40,10 @@ public class Cliente {
     @Column(name = "email", nullable = false, length = 40)
     private String email;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cliente")
     private List<Pedido> pedidos = new ArrayList<>();
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="id")
+    private Direccion direccion;
 }
